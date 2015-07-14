@@ -20,7 +20,7 @@ public class VectorInput : MonoBehaviour {
 		//this code below is framerate dependant, ergo the behaviour is different based on your framerate
 		//transform.position += new Vector3 (0f, 0f, 1f);
 
-		float actualSpeed = 0f;
+		float actualSpeed = 5f;
 		if (Input.GetKey (KeyCode.LeftShift)) {
 			actualSpeed = shiftSpeed;
 		} else {
