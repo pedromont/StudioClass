@@ -17,8 +17,7 @@ public class GameLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown(KeyCode.Space) && 
-		    Vector3.Distance ( player.transform.position, transform.position) < 15f){
+		if (Input.GetKeyDown(KeyCode.Space) && (Vector3.Distance ( player.transform.position, transform.position) < 15f)){
 
 			GetComponent<Text>().text = "You WIN";
 		
