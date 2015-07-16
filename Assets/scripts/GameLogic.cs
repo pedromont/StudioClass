@@ -5,7 +5,9 @@ using UnityEngine.UI;
 public class GameLogic : MonoBehaviour {
 
 	public Transform player;
-	string textBuffer = "You WIN";
+	public Text textUI;
+
+	string textUI = "You WIN";
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +17,14 @@ public class GameLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		GameLogic.GetComponent<Text>().text = textBuffer;
+		if (Vector3.Distance ( player.transform.position, transform.position) < 15f){
+
+
+			GameLogic.GetComponent<Text>().text = textUI;
+		
+		}
+
+
 	}
 
 
